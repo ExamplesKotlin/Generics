@@ -1,8 +1,8 @@
 package com.example.generics
 
-class Stack {
+class Stack<T> {
 
-    private var items: MutableList<Any>
+    private var items: MutableList<T>
 
     constructor(){
         items = ArrayList()
@@ -11,8 +11,8 @@ class Stack {
     val isEmpty: Boolean
         get() =  this.items.isEmpty()
 
-    fun pop() : Any? {
-        val dato: Any?
+    fun pop() : T? {
+        val dato: T?
 
         if (!isEmpty) {
             val index = items.size - 1
@@ -24,7 +24,7 @@ class Stack {
         }
     }
 
-    fun push(dato: Any) {
+    fun push(dato: T) {
         items.add(dato)
     }
 

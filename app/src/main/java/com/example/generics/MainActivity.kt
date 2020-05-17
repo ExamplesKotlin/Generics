@@ -10,15 +10,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var stackOfName: Stack = Stack()
+        var stackOfName: Stack<String> = Stack()
         stackOfName.push("Mary")
         stackOfName.push("Susan")
         stackOfName.push("George")
         stackOfName.push("Jessica")
 
-        var stackOfInteger = Stack()
+        var stackOfInteger : Stack<Int> = Stack()
         stackOfInteger.push(15)
-        stackOfInteger.push("Henry AT")
+        stackOfInteger.push(44)
 
         do {
             Log.e("TAGX", "Nombre: ${stackOfName.pop()}")
