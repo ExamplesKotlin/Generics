@@ -16,6 +16,9 @@ class MainActivity : AppCompatActivity() {
         stackOfName.push("George")
         stackOfName.push("Jessica")
 
+        var stackOfInteger = Stack()
+        stackOfInteger.push(15)
+
         do {
             Log.e("TAGX", "Nombre: ${stackOfName.pop()}")
         } while (!stackOfName.isEmpty)
