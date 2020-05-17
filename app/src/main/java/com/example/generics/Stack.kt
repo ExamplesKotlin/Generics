@@ -8,6 +8,10 @@ class Stack<T> {
         items = ArrayList()
     }
 
+    constructor(items: ArrayList<T>){
+        this.items = items
+    }
+
     val isEmpty: Boolean
         get() =  this.items.isEmpty()
 
