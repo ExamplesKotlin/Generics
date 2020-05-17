@@ -18,10 +18,15 @@ class MainActivity : AppCompatActivity() {
 
         var stackOfInteger = Stack()
         stackOfInteger.push(15)
+        stackOfInteger.push("Henry AT")
 
         do {
             Log.e("TAGX", "Nombre: ${stackOfName.pop()}")
         } while (!stackOfName.isEmpty)
+
+        do {
+            Log.e("TAGX", "Nombre: ${stackOfInteger.pop()}")
+        } while (!stackOfInteger.isEmpty)
 
     }
 }
